@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  color: #222;
+  background: #f5f5f5;
+  line-height: 1.75;
+}
+
+a {
+  color: #0a58a8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.site-title {
+  padding: 24px 0 18px;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.site-title p {
+  margin: 6px 0 0;
+  color: #666;
+}
+
+.site-nav {
+  background: #0f4c5c;
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 14px 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+.intro-card,
+.section-block {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.intro-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.intro-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid #d9d9d9;
+}
+
+.intro-content h2 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.intro-content p {
+  margin: 8px 0;
+  font-size: 1.03rem;
+}
+
+.intro-position {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.intro-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.section-block {
+  padding: 28px;
+  margin-top: 18px;
+}
+
+.section-block h2 {
+  margin: 0 0 18px;
+  font-size: 1.9rem;
+  border-left: 4px solid #0f4c5c;
+  padding-left: 12px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.section-head h2 {
+  margin-bottom: 0;
+}
+
+.publication-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.publication-list li {
+  margin-bottom: 14px;
+}
+
+.simple-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.simple-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 20px, 1080px);
+  }
+
+  .intro-card {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .intro-photo {
+    max-width: 260px;
+  }
+
+  .section-block {
+    padding: 20px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
