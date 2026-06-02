@@ -152,6 +152,38 @@ img {
   margin-bottom: 14px;
 }
 
+.publication-list strong {
+  color: #0b3d91;
+  font-weight: 700;
+}
+
+.admission-info {
+  margin-top: 22px;
+}
+
+.admission-info h3 {
+  margin: 0 0 12px;
+  font-size: 1.28rem;
+  color: #0f4c5c;
+}
+
+.admission-info p {
+  margin: 8px 0;
+}
+
+.admission-info ol {
+  margin: 6px 0 14px;
+  padding-left: 22px;
+}
+
+.admission-info li {
+  margin-bottom: 8px;
+}
+
+.admission-label {
+  font-weight: 700;
+}
+
 .simple-list {
   margin: 0;
   padding-left: 22px;
